@@ -1,12 +1,11 @@
 # ubuntu-setup
 
+1. Install Git `sudo apt install git`
+1. Install vim `sudo apt install vim`
 1. [Install Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#user-content-ubuntu-debian--derivatives)
     * `apt install zsh`
     * `chsh -s $(which zsh)`
     * Re-log in
-1. Install Git `sudo apt install git`
-1. Install vim `sudo apt install vim`
-1. Install Yakuake: `sudo apt install yakuake`
 1. [Install 'Oh My Zsh'](https://github.com/robbyrussell/oh-my-zsh#user-content-getting-started)
     * `sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 1. [Install 'Material Shell'](https://github.com/carloscuesta/materialshell#user-content-download)
@@ -14,6 +13,8 @@
     * `cp materialshell/zsh/materialshell.zsh-theme ~/.oh-my-zsh/themes/`
     * Modify .zshrc to enable the theme with ZSH_THEME="materialshell".
     * Restart terminal
+1. Install Yakuake: `sudo apt install yakuake`
+    * Copy color-scheme files for Yakuake: `cp ubuntu-setup/colorscheme/* ~/.kde/share/apps/konsole/`
 1. [Install Linuxbrew](https://github.com/Linuxbrew/brew#user-content-install-linuxbrew)
     * Install dependencies `sudo apt-get install build-essential curl file git python-setuptools ruby`
     * `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"`
@@ -32,11 +33,11 @@
     # Ref: http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/
     source $HOME/.env_vars
     ```
-    * Copy color-scheme files for Yakuake: `cp ubuntu-setup/colorscheme/* ~/.kde/share/apps/konsole/`
 
 ### Optional Steps
 
 1. Install graphic card driver: http://www.webupd8.org/2016/06/how-to-install-latest-nvidia-drivers-in.html
+    * PPA: `https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa/`
 1. Install ASUS WIFI adapter driver: [rtl8812AU_8821AU_linux](https://github.com/abperiasamy/rtl8812AU_8821AU_linux)
 1. Disable specific WIFI adapter (Ref: [Ask Ubuntu](https://askubuntu.com/questions/116309/how-can-i-permanently-disable-the-internal-wifi-adapter))
     * Find out driver name: `lspci -nnk | grep -iA2 net`
