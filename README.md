@@ -32,3 +32,4 @@
     # Ref: http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/
     source $HOME/.env_vars
     ```
+    * Copy color-scheme files for Yakuake: `cp ubuntu-setup/colorscheme/* ~/.kde/share/apps/konsole/`
