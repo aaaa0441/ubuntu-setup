@@ -33,3 +33,11 @@
     source $HOME/.env_vars
     ```
     * Copy color-scheme files for Yakuake: `cp ubuntu-setup/colorscheme/* ~/.kde/share/apps/konsole/`
+
+### Optional Steps
+
+1. Install graphic card driver: http://www.webupd8.org/2016/06/how-to-install-latest-nvidia-drivers-in.html
+1. Install ASUS WIFI adapter driver: [rtl8812AU_8821AU_linux](https://github.com/abperiasamy/rtl8812AU_8821AU_linux)
+1. Disable specific WIFI adapter (Ref: [Ask Ubuntu](https://askubuntu.com/questions/116309/how-can-i-permanently-disable-the-internal-wifi-adapter))
+    * Find out driver name: `lspci -nnk | grep -iA2 net`
+    * Add `blacklist <driver-name>` to '/etc/modprobe.d/blacklist.conf'
