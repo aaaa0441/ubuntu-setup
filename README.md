@@ -42,3 +42,6 @@
 1. Disable specific WIFI adapter (Ref: [Ask Ubuntu](https://askubuntu.com/questions/116309/how-can-i-permanently-disable-the-internal-wifi-adapter))
     * Find out driver name: `lspci -nnk | grep -iA2 net`
     * Add `blacklist <driver-name>` to '/etc/modprobe.d/blacklist.conf'
+1. [Remove guest session](http://ubuntuhandbook.org/index.php/2016/04/remove-guest-session-ubuntu-16-04/)
+1. [Install Chinese input method](https://apps.ubuntu.com/cat/applications/precise/fcitx-googlepinyin/)
+
